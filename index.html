@@ -1,1 +1,52 @@
-<h2> Escriu la teva aventura </h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <title>Escriu Aventura</title>
+</head>
+<body>
+    <header class = 'header'>
+        <h1> Juga la teva aventura, gaudeix de la lectura!! </h1>
+    </header>
+    <main>
+        <header>
+            <div class = 'pagina'>Pagina: </div>
+        </header>
+        <section class="text">Text</section>
+        <footer>
+            <button onclick="ferSi()">Sí</button>
+            <button onclick="ferNo()">No</button>
+        </footer>
+    </main>
+    
+
+    <script>
+        let historia = [
+            { text: 'Benvingut'},
+            { text: 'Continuem'}
+        ]
+        let pagina = 0;
+        let text = document.querySelector('.text');
+        text.textContent = historia[pagina].text;
+
+        function ferSi() {
+            pagina = pagina +1;
+            text.textContent = historia[pagina].text
+            let sumPag = document.querySelector('.pagina');
+            sumPag.textContent = pagina;
+        }
+        function ferNo() {
+            pagina = pagina -1;
+            text.textContent = historia[pagina].text;
+            let sumPag = document.querySelector('.pagina');
+            sumPag.textContent = pagina;
+        }
+    </script>
+</body>
+</html>
