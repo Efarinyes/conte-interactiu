@@ -1,14 +1,53 @@
 body {
-    max-width: 40rem;
-    
+    max-width: 43rem;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    color: navy;
+}
+
+.header {
+    font-size: xx-large;
+}
+
+.imgFondo {
+    background-color: darkseagreen;
+   
+   
+    padding: 1rem;
 }
 
 .text {
-    background-color:antiquewhite;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    color:navy;
     padding: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1rem;
     font-size: x-large;
+    font-weight: 700;
+}
+.btnSi {
+    background-color:darkgreen; 
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btnNo {
+    background-color:darkred;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.foot {
+    display: flex;
+    justify-content: space-around;
 }
