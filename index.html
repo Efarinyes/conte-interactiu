@@ -18,7 +18,11 @@
         <header>
             <div class = 'pagina'>Pagina: </div>
         </header>
-        <section class="text">Text</section>
+        <section class="text">
+            
+            <p>Text</p>
+
+        </section>
         <footer>
             <button onclick="ferSi()">Sí</button>
             <button onclick="ferNo()">No</button>
@@ -29,8 +33,12 @@
     <script>
         let historia = [
             { text: 'Benvingut'},
-            { text: 'Continuem'}
+            { text: 'Continuem'},
+            { text: 'Un senyor petit i eixerit de Santa Coloma, ha d\'anar a Madrid decidit, ha de treballar \n vols participar a la seva aventura?'},
+            { text: 'estas segur de que no vols seguir?'},
+            { text: 'Adeu!!'}
         ]
+        
         let pagina = 0;
         let text = document.querySelector('.text');
         text.textContent = historia[pagina].text;
