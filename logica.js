@@ -52,11 +52,11 @@ function ferSi() {
     
     text.textContent = historia[pagina].text;
     let sumPag = document.querySelector('.pagina');
-    sumPag.textContent = pagina;
+    sumPag.textContent = `Pagina: ${pagina}`;
 };
 function ferNo() {
     pagina = historia[pagina].no;
     text.textContent = historia[pagina].text;
     let sumPag = document.querySelector('.pagina');
-    sumPag.textContent = pagina;
+    sumPag.textContent = `Pagina: ${pagina}`;
  };
