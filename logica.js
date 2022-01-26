@@ -22,7 +22,7 @@ const historia = [
     },
     {
         "text": "Sou a Chamartin, els hotels son de pena, et quedes?",
-        "si": 8,
+        "si": 6,
         "no": 7
     },
     {
@@ -37,8 +37,8 @@ const historia = [
         "no":7
     },
     {
-        "text": "Adeu!!",
-        "si": -1,
+        "text": "Adeu!!. Si vols repetir la història, prem si!",
+        "si": 1,
         "no": -1
     }
 ];
