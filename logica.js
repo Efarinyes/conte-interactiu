@@ -43,20 +43,34 @@ const historia = [
     }
 ];
 
+let nom = prompt('Com Et dius?');
 let pagina = 0;
+let nomPublic = document.querySelector('#nom');
+nomPublic.textContent = `Benvingut: ${nom}`;
+let conjuntPaginas = [];
+
 let text = document.querySelector('.text');
 text.textContent = historia[pagina].text;
+let sumPag = document.querySelector('.pagina');
+sumPag.textContent = `Pagina: ${pagina}`;
+
+conjuntPaginas.push(pagina);
+let pintaPag = document.querySelector('#pagines');
+pintaPag.textContent = `Has estat a la pagina: ${conjuntPaginas}`;
 
 function ferSi() {
     pagina = historia[pagina].si;
-    
     text.textContent = historia[pagina].text;
     let sumPag = document.querySelector('.pagina');
     sumPag.textContent = `Pagina: ${pagina}`;
+    conjuntPaginas.push(pagina);
+    pintaPag.textContent = `Has estat a la pagina: ${conjuntPaginas}`;
 };
 function ferNo() {
     pagina = historia[pagina].no;
     text.textContent = historia[pagina].text;
     let sumPag = document.querySelector('.pagina');
     sumPag.textContent = `Pagina: ${pagina}`;
+    conjuntPaginas.push(pagina);
+    pintaPag.textContent = `Has estat a la pagina: ${conjuntPaginas}`;
  };

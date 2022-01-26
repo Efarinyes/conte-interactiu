@@ -1,6 +1,5 @@
 body {
-    max-width: 43rem;
-    margin: 0 auto;
+    max-width: 80rem;
     font-family: 'Roboto', sans-serif;
     color: navy;
 }
@@ -11,9 +10,17 @@ body {
 
 .imgFondo {
     background-color: darkseagreen;
-   
-   
     padding: 1rem;
+}
+.container {
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+.lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: darkseagreen;
 }
 
 .text {

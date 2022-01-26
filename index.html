@@ -14,27 +14,40 @@
 </head>
 
 <body>
-    <div class = 'imgFondo'>
-        <header class='header'>
-            <h1> Juga la teva aventura </h1>
-            <h3> Gaudeix de la lectura!</h3>
-        </header>
-        <main>
-            <header>
-                <div>
-                   <h2 class = 'pagina'> Pagina: </h2> 
-                </div>
+    <div class='container'>
+        <div class='imgFondo'>
+            <header class='header'>
+                <h1> Juga la teva aventura </h1>
+                <h3> Gaudeix de la lectura!</h3>
             </header>
-        
-            <section class="text">
-                Text
-            </section>
-            <footer class='foot'>
-                <button onclick="ferSi()" class='btnSi'>Sí</button>
-                <button onclick="ferNo()" class='btnNo'>No</button>
-            </footer>
-        </main>
+            <main>
+                <header>
+                    <div>
+                        <h2 class='pagina'> Pagina: </h2>
+                    </div>
+                </header>
+
+                <section class="text">
+                    Text
+                </section>
+                <footer class='foot'>
+                    <button onclick="ferSi()" class='btnSi'>Sí</button>
+                    <button onclick="ferNo()" class='btnNo'>No</button>
+                </footer>
+            </main>
+        </div>
+        <div class='lateral'>
+            <div>
+                <h2 id=nom> Nom </h2>
+            </div>
+
+            <div id='pagines'>
+                Pàgines
+            </div>
+        </div>
     </div>
+
+
     <script src="logica.js"></script>
 </body>
 
