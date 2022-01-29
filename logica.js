@@ -49,6 +49,7 @@ let nomPublic = document.querySelector('#nom');
 nomPublic.textContent = `Benvingut: ${nom}`;
 let conjuntPaginas = [];
 
+
 let text = document.querySelector('.text');
 text.textContent = historia[pagina].text;
 let sumPag = document.querySelector('.pagina');
@@ -65,7 +66,7 @@ function ferSi() {
     sumPag.textContent = `Pagina: ${pagina}`;
     conjuntPaginas.push(pagina);
     pintaPag.textContent = `Has estat a la pagina: ${conjuntPaginas}`;
-};
+}
 function ferNo() {
     pagina = historia[pagina].no;
     text.textContent = historia[pagina].text;
@@ -73,4 +74,4 @@ function ferNo() {
     sumPag.textContent = `Pagina: ${pagina}`;
     conjuntPaginas.push(pagina);
     pintaPag.textContent = `Has estat a la pagina: ${conjuntPaginas}`;
- };
+ }
