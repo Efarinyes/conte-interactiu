@@ -5,12 +5,12 @@ const historia = [
     no: 7,
   },
   {
-    text: "Un senyor petit i eixerit de Santa Coloma, ha d'anar a Madrid decidit, ha de treballar. L'acompanyes en el seu viatge?",
+    text: "De  bon matí el Sr. petit i eixerit fa les maletes. L'ajudes?",
     si: 2,
-    no: 7,
+    no: 2,
   },
   {
-    text: "El senyor petit i eixerit va cap a Sants a gafar el tren, vas mb ell?",
+    text: "El senyor petit i eixerit va cap a Sants a gafar el tren, vas amb ell?",
     si: 3,
     no: 7,
   },
@@ -59,9 +59,8 @@ pintaPag.textContent = `Has estat a la pagina: ${conjuntPaginas}`;
 
 function ferSi() {
   pagina = historia[pagina].si;
-  console.log("fersi", pagina);
+
   if (pagina === 8) {
-    console.log("fersi if", pagina);
     document.getElementById("btnSi").disabled = true;
     document.getElementById("btnNo").disabled = true;
   }
@@ -74,10 +73,8 @@ function ferSi() {
 }
 function ferNo() {
   pagina = historia[pagina].no;
-  console.log("no", pagina);
 
   if (pagina === 8) {
-    console.log("n if", pagina);
     document.getElementById("btnNo").disabled = true;
     document.getElementById("btnSi").disabled = true;
   }

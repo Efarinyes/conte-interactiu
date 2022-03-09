@@ -1,17 +1,18 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: whitesmoke;
+  color: #1f1d1d;
 }
 
 .container {
   width: 75%;
   height: auto;
-  padding: 5rem;
+
   background-image: url("img/fondo.jpeg");
   background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
 }
-.lateral-conatiner {
+.lateral-container {
   padding: 1rem;
 }
 .lateral {
@@ -25,7 +26,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-size: xx-large;
+  font-size: 1.5rem;
 }
 main {
   display: flex;
@@ -37,17 +38,28 @@ main {
 .pagina {
   display: flex;
   flex-direction: column;
-  padding-left: 24rem;
+  padding-left: 2.4rem;
   justify-content: center;
   padding-top: 1.5rem;
 }
 #pagines {
   margin-top: 1.5%;
+  color: black;
+}
+
+#nom {
+  color: wheat;
+  margin-bottom: 5rem;
 }
 .text {
   padding-top: inherit;
-  font-size: x-large;
-  font-weight: 700;
+  font-size: 1.5rem;
+  /* font-weight: 700; */
+  color: black;
+}
+.textEsq {
+  margin-left: 0;
+  padding-left: 0;
 }
 .foot {
   display: flex;
@@ -66,9 +78,6 @@ main {
   display: inline-block;
   font-size: 16px;
 }
-.btnSi:hover {
-  background-color: palegreen;
-}
 
 .btnNo {
   background-color: orange;
@@ -80,7 +89,4 @@ main {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-}
-.btnNo:hover {
-  background-color: darkred;
 }
