@@ -1,93 +1,86 @@
-
- body {
-    font-family: 'Roboto', sans-serif;
-    color:whitesmoke;
- }
+body {
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
+}
 
 .container {
-    width: 75%;
-    height: auto;
-    padding: 5rem;
-    background-image: url('img/fondo.jpeg');
-    background-repeat: no-repeat;
-    margin: 0 auto;
-   
+  width: 75%;
+  height: auto;
+  padding: 5rem;
+  background-image: url("img/fondo.jpeg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 .lateral-conatiner {
-    
-    padding: 1rem;
+  padding: 1rem;
 }
 .lateral {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
 }
 .header {
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: xx-large;
-    
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: xx-large;
 }
 main {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2.5rem;
-    width: 50%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2.5rem;
+  width: 50%;
+  margin: 0 auto;
 }
 .pagina {
-    display: flex;
-    flex-direction: column;
-    padding-left: 24rem;
-    justify-content: center;
-    padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24rem;
+  justify-content: center;
+  padding-top: 1.5rem;
 }
 #pagines {
-    margin-top: 1.5%;
+  margin-top: 1.5%;
 }
 .text {
-    padding-top: inherit;
-    font-size: x-large;
-    font-weight: 700;
+  padding-top: inherit;
+  font-size: x-large;
+  font-weight: 700;
 }
 .foot {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5rem;
 }
 
 .btnSi {
-    background-color:palegreen; 
-    cursor: pointer;
-    border: none;
-    border-radius: 12px;
-    color: gray;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  background-color: green;
+  border: none;
+  border-radius: 12px;
+  color: gray;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 .btnSi:hover {
-    background-color: darkgreen; ;
-    color: whitesmoke;
+  background-color: palegreen;
 }
 
 .btnNo {
-    background-color:orange;
-    border: none;
-    border-radius: 12px;
-    color: whitesmoke;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  background-color: orange;
+  border: none;
+  border-radius: 12px;
+  color: whitesmoke;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 .btnNo:hover {
-    background-color:darkred;
-    
+  background-color: darkred;
 }
